@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./src/favicon/icons8-коллаж-из-картинок-16.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>cssMemeSlider</title>
+</head>
+
+<body>
+    <div class="slider-world">
+
+        <!-- Radio button -->
+        <input type="radio" name="meme-slider" id="slide1" class="slider-radio" checked>
+        <input type="radio" name="meme-slider" id="slide2" class="slider-radio">
+        <input type="radio" name="meme-slider" id="slide3" class="slider-radio">
+        <input type="radio" name="meme-slider" id="slide4" class="slider-radio">
+        <input type="radio" name="meme-slider" id="slide5" class="slider-radio">
+
+        <!-- Slider -->
+        <div class="slider-area">
+            <div class="slides-track">
+
+                <div class="meme-card">
+                    <img class="meme-img" src="./src/img/best-of-the-best-brad-pitt.gif" alt="best of the best meme">
+                    <div class="meme-caption">
+                        I'm best of the best of the best!!
+                    </div>
+                </div>
+
+                <div class="meme-card">
+                    <img class="meme-img" src="./src/img/cat-stare-staring-cat.gif" alt="Кот смотрит на код">
+                    <div class="meme-caption">
+                        Когда вижу position: absolute в каждой строчке...
+                    </div>
+                </div>
+
+                <div class="meme-card">
+                    <img class="meme-img" src="./src/img/doggo-dancing.gif" alt="Танцующий пёс">
+                    <div class="meme-caption">
+                        Я после того как сделал слайдер на чистом CSS!
+                    </div>
+                </div>
+
+                <div class="meme-card">
+                    <img class="meme-img" src="./src/img/pepe-happy-pepe-joy.gif" alt="Pepe радуется">
+                    <div class="meme-caption">
+                        Никакого JS — только CSS магия!
+                    </div>
+                </div>
+
+                <div class="meme-card">
+                    <img class="meme-img" src="./src/img/sus-among-us.gif" alt="Among Us мем">
+                    <div class="meme-caption">
+                        Когда говорят "это невозможно без JS"... а ты сделал!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Buttons -->
+        <div class="nav-buttons">
+            <label for="slide1" class="nav-btn"> 1</label>
+            <label for="slide2" class="nav-btn"> 2</label>
+            <label for="slide3" class="nav-btn"> 3</label>
+            <label for="slide4" class="nav-btn"> 4</label>
+            <label for="slide5" class="nav-btn"> 5</label>
+        </div>
+    </div>
+</body>
+
+</html>
