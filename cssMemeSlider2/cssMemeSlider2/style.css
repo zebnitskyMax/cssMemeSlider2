@@ -129,3 +129,52 @@
      transform: translateY(-2px);
      box-shadow: 0 7px 0 #B45F1B;
  }
+
+ /* Change slide */
+ #slide1:checked~.slider-area .slides-track {
+     transform: translateX(0%);
+ }
+
+ #slide2:checked~.slider-area .slides-track {
+     transform: translateX(-100%);
+ }
+
+ #slide3:checked~.slider-area .slides-track {
+     transform: translateX(-200%);
+ }
+
+ #slide4:checked~.slider-area .slides-track {
+     transform: translateX(-300%);
+ }
+
+ #slide5:checked~.slider-area .slides-track {
+     transform: translateX(-400%);
+ }
+
+ /* Active btn */
+ #slide1:checked~.nav-buttons label[for="slide1"],
+ #slide2:checked~.nav-buttons label[for="slide2"],
+ #slide3:checked~.nav-buttons label[for="slide3"],
+ #slide4:checked~.nav-buttons label[for="slide4"],
+ #slide5:checked~.nav-buttons label[for="slide5"] {
+     background: linear-gradient(120deg, #FF4D6D, #FF3366);
+     color: white;
+     box-shadow: 0 0 15px #FF4D6D, 0 5px 0 #990033;
+     transform: scale(1.02);
+ }
+
+ @keyframes glowPulse {
+     0% {
+         opacity: 0;
+         transform: scale(0.98);
+     }
+
+     100% {
+         opacity: 1;
+         transform: scale(1);
+     }
+ }
+
+ .meme-card {
+     animation: glowPulse 0.5s ease-out;
+ }
